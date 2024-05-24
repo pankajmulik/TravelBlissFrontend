@@ -45,9 +45,9 @@ const Footer = () => {
             <div className='grid-items col-span-2'>
                 <div className='mt-4'>
                     <label className='text-neutral-500  mx-2 sm:4 md:8  lg:mx-16' htmlFor="">CONNECT WITH US</label>
-                    <div className='relative mx-2 sm:4 md:8  lg:mx-16'>
-                        <input className='mt-4 outline-none border border-teal-500 rounded-full pl-4 h-14 w-full' placeholder='Email' type="Email" />
-                        <button className='absolute mt-6 rounded-full top-0 right-0 bg-teal-500 px-6 py-2 mr-2'>Contact Us</button>
+                    <div className='relative -z-10 mx-2 sm:4 md:8  lg:mx-16'>
+                        <input className='mt-4  outline-none border border-teal-500 rounded-full pl-4 h-14 w-full' placeholder='Email' type="Email" />
+                        <button className='absolute right-0 mt-6 rounded-full top-0 right-0 bg-teal-500 px-6 py-2 mr-2'>Contact Us</button>
                     </div>
                     <div className='mt-8'>
 

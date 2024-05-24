@@ -7,7 +7,7 @@ import RegistrationRight from './RegistrationRight'
 const Registration = () => {
   return (
     <>
-        <div className='w-full flex justify-center bg-gray-100 h-[calc(100vh-96px)]'>
+        <div className='w-full flex justify-center bg-gray-100 h-fit'>
             <div className='w-11/12'>
                 <div className='grid gap-8 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 h-full pb-4 '>
                     <div className='grid-item bg-cover bg-center bg-[url("../public/images/RegistrationBackground.jpeg")] rounded-xl flex justify-center items-center '>

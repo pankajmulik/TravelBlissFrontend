@@ -14,7 +14,7 @@ const RegistrationRight = () => {
             </div>
             <div className='mt-24 flex flex-col items-center wf-ull'>
                 <div className='text-center text-neutral-400'>You Wan't to register?</div>
-                <Link to='/' className='border-b border-black flex justify-center items-center px-4'>
+                <Link to='/login' className='border-b border-black flex justify-center items-center px-4'>
                         <div className='mr-2'>Login</div>
                         <div>
                             <ArrowRight size={20} />
