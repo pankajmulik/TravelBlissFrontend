@@ -69,10 +69,10 @@ const OTPVerification = ({
           <button className="bg-teal-500 text-white py-2 px-4 rounded mb-2" onClick={verifyEmailOTP}>Verify</button>
           {emailVerified && <p className="text-green-500 text-sm">Email OTP verified successfully</p>}
         </div>
-        <div className='mt-4'>
+        <div className='mt-4 flex flex-col items-start'>
           <label className='text-neutral-500 text-sm' htmlFor="mobileOTP">Mobile OTP</label>
           <input
-            className='border-b pt-[1px] pb-[12px] border-neutral-300 outline-none mb-2'
+            className='border-b pt-[1px] pb-[12px] border-neutral-300 outline-none mb-2 w-9/12'
             type="text"
             name="mobileOTP"
             id="mobileOTP"
@@ -83,7 +83,7 @@ const OTPVerification = ({
           {mobileVerified && <p className="text-green-500 text-sm">Mobile OTP verified successfully</p>}
         </div>
         {otpMessage && <p className="text-red-500 text-sm">{otpMessage}</p>}
-        <NavLink to='/login' className={`bg-teal-500 text-white py-2 px-4 rounded mt-4 ${!bothOTPVerified && 'opacity-50 pointer-events-none'}`} onClick={bothOTPVerified ? handleClosePopup : null}>OK</NavLink>
+        <NavLink to='/login' className={`bg-teal-500 text-center text-white py-2 px-4 rounded mt-4 ${!bothOTPVerified && 'opacity-50 pointer-events-none'}`} onClick={bothOTPVerified ? handleClosePopup : null}>OK</NavLink>
       </div>
     </div>
   );

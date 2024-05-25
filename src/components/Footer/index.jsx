@@ -83,3 +83,15 @@ const Footer = () => {
 }
 
 export default Footer
+//   const checkLogin = async () => {
+//     try {
+//       const res = await ToursandTravelsServices.loginuser(formData);
+//       if (res.status === 202) {
+//         setPopup({ isVisible: true, message: 'Login successful!', isSuccess: true });
+//       } else {
+//         setPopup({ isVisible: true, message: 'Invalid credentials.', isSuccess: false });
+//       }
+//     } catch (error) {
+//       setPopup({ isVisible: true, message: 'An error occurred. Please try again.', isSuccess: false });
+//     }
+//   };
