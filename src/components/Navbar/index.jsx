@@ -35,7 +35,7 @@ const Navbar = () => {
               </div>
               <div className="text-md text-neutral-500 flex items-center hidden sm:hidden md:flex lg:flex">
                 <NavLink to="" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8" >Home</NavLink>
-                <NavLink to="biography-page" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">Biography</NavLink>
+                <NavLink to="states" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">States</NavLink>
                 <NavLink to="fun-facts" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">Fun Facts</NavLink>
               </div>
               <div className={`sidebar bg-white ${isOpen ? "active" : ""}`}>
@@ -53,7 +53,7 @@ const Navbar = () => {
                 <div className="sd-body">
                   <div className="text-lg text-neutral-600 flex flex-col justify-center items-start ml-4">
                     <NavLink to="" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">Home</NavLink>
-                    <NavLink to="biography-page" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">Biography</NavLink>
+                    <NavLink to="states" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">States</NavLink>
                     <NavLink to="fun-facts" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">Fun Facts</NavLink>
                     {!isLoginPage && (
                       <NavLink to="login" className="px-8 py-2 bg-teal-500 hover:bg-teal-700 text-white rounded-full">Log In</NavLink>

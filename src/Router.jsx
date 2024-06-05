@@ -4,6 +4,7 @@ import App from './App'
 import Login from './components/Login'
 import HomePage from './pages/HomePage'
 import Registration from './components/Registration'
+import States from './pages/States'
 
 const Router = () => {
   return (
@@ -14,6 +15,7 @@ const Router = () => {
                   <Route index element={<Login/>}/>
                   <Route path='/login/registration' element={<Registration/>} />
                 </Route>
+                <Route path='/states' element={<States/>} />
         </Route>
     </Routes>
   )
