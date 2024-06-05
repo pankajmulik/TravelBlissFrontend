@@ -11,7 +11,8 @@ const LoginForm = () => {
   });
   const [errors, setErrors] = useState({});
   const [popup, setPopup] = useState({ isVisible: false, message: '', isSuccess: false });
-  const [loginMethod, setLoginMethod] = useState('username'); // username or mobile
+  const [loginMethod, setLoginMethod] = useState('username');
+  const [showOTPField, setShowOTPField] = useState(false);
 
   const validate = {
     userName: (value) => value ? '' : 'Username is required.',
@@ -43,6 +44,10 @@ const LoginForm = () => {
     } catch (error) {
       setPopup({ isVisible: true, message: 'An error occurred. Please try again.', isSuccess: false });
     }
+  };
+
+  const sendOTP = async () => {
+    setShowOTPField(true);
   };
 
   const handleSubmit = (e) => {
@@ -122,18 +127,27 @@ const LoginForm = () => {
               />
               {errors.mobileNumber && <p className="text-red-500 text-sm">{errors.mobileNumber}</p>}
             </div>
-            <div className='mt-6 flex flex-col'>
-              <label className='text-neutral-500 text-sm' htmlFor="otp">Enter OTP</label>
-              <input
-                className='border-b pt-[1px] pb-[12px] border-neutral-300 outline-none'
-                type="text"
-                name="otp"
-                id="otp"
-                value={formData.otp}
-                onChange={handleChange}
-                required
-              />
-              {errors.otp && <p className="text-red-500 text-sm">{errors.otp}</p>}
+            {showOTPField && (
+              <div className='mt-6 flex flex-col'>
+                <label className='text-neutral-500 text-sm' htmlFor="otp">Enter OTP</label>
+                <input
+                  className='border-b pt-[1px] pb-[12px] border-neutral-300 outline-none'
+                  type="text"
+                  name="otp"
+                  id="otp"
+                  value={formData.otp}
+                  onChange={handleChange}
+                  required
+                />
+                {errors.otp && <p className="text-red-500 text-sm">{errors.otp}</p>}
+              </div>
+            )}
+            <div className='flex items-center justify-end'>
+              {!showOTPField && (
+                <button type="button" className='bg-teal-500 text-white py-2 rounded-xl mt-4 px-4 hover:bg-teal-700' onClick={sendOTP}>
+                  Send OTP
+                </button>
+              )}
             </div>
           </>
         )}
@@ -165,3 +179,7 @@ const LoginForm = () => {
 };
 
 export default LoginForm;
+
+    // Implement your send OTP logic here
+    // For example:
+    // const res = await ToursandTravelsServices.sendOTP(formData.mobileNumber);

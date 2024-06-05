@@ -48,3 +48,9 @@ html, body, #root {
   opacity: 1;
   visibility: visible;
 }
+
+.break-Paint{
+  font-family: "Finger Paint", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}

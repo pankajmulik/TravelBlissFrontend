@@ -12,7 +12,7 @@ const RegistrationForm = () => {
   });
   const [errors, setErrors] = useState({});
   const [isPopupVisible, setIsPopupVisible] = useState(false);
-  const [passwordVisible, setPasswordVisible] = useState(false); 
+  const [passwordVisible, setPasswordVisible] = useState(false);
   const [confirmPasswordVisible, setConfirmPasswordVisible] = useState(false);
   const [emailOTP, setEmailOTP] = useState('');
   const [mobileOTP, setMobileOTP] = useState('');
@@ -62,6 +62,7 @@ const RegistrationForm = () => {
 
   const handleClosePopup = () => {
     if (emailVerified && mobileVerified) {
+      console.log('Form data:', formData); // You can replace this with the actual data storage logic
       setIsPopupVisible(false);
       setFormData({
         fullName: '',
@@ -121,6 +122,7 @@ const RegistrationForm = () => {
       </form>
       {isPopupVisible && (
         <OTPVerification
+          formData={formData}
           emailOTP={emailOTP}
           setEmailOTP={setEmailOTP}
           emailVerified={emailVerified}
@@ -129,6 +131,7 @@ const RegistrationForm = () => {
           setMobileOTP={setMobileOTP}
           mobileVerified={mobileVerified}
           setMobileVerified={setMobileVerified}
+          otpMessage={otpMessage}
           setOtpMessage={setOtpMessage}
           handleClosePopup={handleClosePopup}
         />
