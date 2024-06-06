@@ -92,7 +92,7 @@ const HomeFlexSlider = () => {
                             <div className="font-['Sevillana'] italic font-bold text-5xl sm:text-5xl md:text-7xl lg:text-9xl text-white text-center tracking-widest">Experience</div>
                             <div className='text-center text-white text-xl mt-4'>You have an amazing opportunity to experience a world of adventure and new experiences</div>
                             <div className='flex justify-center mt-6'>
-                                <button className='px-16 py-2 bg-black bg-opacity-5 border border-white rounded shadow-xl hover:bg-opacity-20 transition-all duration-500 text-white'>Start adventure</button>
+                                <button className='px-16 py-2 bg-teal-500 bg-opacity-40 border border-teal-300 rounded shadow-xl hover:bg-opacity-80 transition-all duration-500 text-white'>Start adventure</button>
                             </div>
                         </div>
                     </div>

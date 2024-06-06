@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import OTPVerification from '../OTPVerification';
+import ToursandTravelsServices from '../../../Services/ToursandTravelsServices';
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
@@ -42,7 +43,20 @@ const RegistrationForm = () => {
       ...prevErrors,
       [name]: validate[name](value, formData.password)
     }));
-  };
+  };1
+
+  const creatUser=async()=>
+    {
+      try{
+        const res= await ToursandTravelsServices.sendOtptoEmail(formData.email);
+        console.log(res.data);
+        console.log("hello");
+      }
+      catch(error)
+      {
+        console.log(error);
+      }
+    }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -54,6 +68,7 @@ const RegistrationForm = () => {
 
     if (Object.keys(newErrors).length === 0) {
       console.log('Form submitted successfully');
+      creatUser();
       setIsPopupVisible(true);
     } else {
       setErrors(newErrors);

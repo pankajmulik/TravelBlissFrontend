@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-// import ToursandTravelsServices from '../../../Services/ToursandTravelsServices';
+import ToursandTravelsServices from '../../../Services/ToursandTravelsServices';
 
 const OTPVerification = ({ 
   setOtpMessage,
@@ -94,11 +94,11 @@ const OTPVerification = ({
           <label className='text-neutral-500 text-sm' htmlFor="emailOTP">Email OTP</label>
           <input
             className='border-b pt-[1px] pb-[12px] border-neutral-300 outline-none mb-2 w-9/12'
-            type="number"
+            type="text"
             name="emailOTP"
             id="emailOTP"
             value={emailOTP || ''}
-            onChange={(e) => setEmailOTP(Number(e.target.value))}
+            onChange={(e) => setEmailOTP(e.target.value)}
             disabled={emailButtonDisabled}
           />
           <button

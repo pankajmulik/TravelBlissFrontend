@@ -16,7 +16,8 @@ const KeralaSlider = () => {
                 
             <div className='flex justify-center mt-6 items-center mt-16'>
                 <div className='text-white text-xl'>Visit us for exciting prices : )</div>
-                <button className='text-white px-12 py-2 border border-white rounded ml-4 hover:bg-black hover:bg-opacity-30 hover:transition-all duration-500'>Let's Go!</button>
+                
+                <button className='ml-4 px-12 py-2 bg-teal-500 bg-opacity-40 border border-teal-300 rounded shadow-xl hover:bg-opacity-80 transition-all duration-500 text-white'>Start adventure</button>
             </div>
         </div>
     </>
