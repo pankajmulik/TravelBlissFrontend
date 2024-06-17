@@ -81,7 +81,7 @@
 // };
 
 // export default Navbar;
-import { RiLuggageCartFill } from "react-icons/ri";
+import { RiLuggageCartFill, RiMapPinUserFill } from "react-icons/ri";
 import React, { useState } from "react";
 import { Menu, X } from "react-feather";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
@@ -130,6 +130,22 @@ const Navbar = () => {
                 <NavLink to="" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8" >Home</NavLink>
                 <NavLink to="states" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">State</NavLink>
                 <NavLink to="hotels" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">Hotels</NavLink>
+            
+                {
+                  userstatus === 'Logout' ? <div className="text-neutral-600 flex">
+                    <div className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">
+                      <NavLink to='/mybookings'> <RiLuggageCartFill /> </NavLink>
+                    </div>
+
+                    <div className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">
+                      <NavLink to='/profile'>
+                        <RiMapPinUserFill />
+                      </NavLink>
+                    </div>
+
+                  </div>:null
+                }
+                
               </div>
               <div className={`sidebar bg-white ${isOpen ? "active" : ""}`}>
                 <div className="sd-header">
@@ -180,6 +196,7 @@ const Navbar = () => {
             }
             {
               userstatus === 'Logout' ? <div>
+                
                 <div>
                   <NavLink to="login" className="px-4 mr-4 py-2 bg-teal-500 hover:bg-teal-700 text-white rounded-full" onClick={handleLogout}>
                     {
@@ -187,16 +204,8 @@ const Navbar = () => {
                     }
                   </NavLink>
                 </div>
-                <div className="text-neutral-600 flex">
-                  <div>
-                    <RiLuggageCartFill />
-                  </div>
-                 
-                  <div className="text-neutral-600 flex">
-                    <RiMapPinUserFill />
-</div>
-
-                </div>
+                
+                
               </div> : null
             }
            
