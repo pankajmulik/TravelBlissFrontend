@@ -13,6 +13,9 @@ const LoginForm = () => {
     mobileNumber: '',
     otp: ''
   });
+  const { userstatus, setuserstatus } = useContext(userLoginContext)
+
+  const navigate = useNavigate()
   const [errors, setErrors] = useState({});
   const [popup, setPopup] = useState({ isVisible: false, message: '', isSuccess: false });
   const [loginMethod, setLoginMethod] = useState('username');
@@ -70,7 +73,7 @@ const LoginForm = () => {
       setErrors(newErrors);
     }
     setuserstatus('Logout')
-    // navigate('/home')
+  navigate('/')
     
   };
 
@@ -88,9 +91,7 @@ const LoginForm = () => {
     }
   };
 
-  const {userstatus,setuserstatus}=useContext(userLoginContext)
-
- const navigate = useNavigate()
+  
 
   return (
     <div className='flex flex-col justify-center items-center w-8/12 py-16'>
