@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import OTPVerification from '../OTPVerification';
-import ToursandTravelsServices from '../../../Services/ToursandTravelsServices';
+// import ToursandTravelsServices from '../../../Services/ToursandTravelsServices';
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({

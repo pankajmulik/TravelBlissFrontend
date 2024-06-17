@@ -1,0 +1,212 @@
+{
+    "stateName": "Andra Pradesh",
+    "categories": [
+        {
+            "categoryName": "Hill stations",
+            "places": [
+                {
+                    "placeName": "Nallamala Hills",
+                    "placeImage": "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2022/05/Nallamalla-Hills.jpg?fit=1080%2C810&ssl=1",
+                    "nearbyRailwayStation": "Markapur",
+                    "nearbyAirport": "Hyderabad",
+                    "nearbyBusStop": "Kurnool",
+                    "nearbyHotel": "Hotel Haritha Eegalapenta"
+                },
+                {
+                    "placeName": "Nagalapuram",
+                    "placeImage": " https://3.bp.blogspot.com/-O5hAOSRFun0/WBNUQ8i9uZI/AAAAAAAAodA/kw5cooWW4DkegFx9W4ohtfL2cl80G-pogCLcB/w1200-h630-p-k-no-nu/Nagalapuram%2BSaddikooda%2BMadugu%2BRam%2BKumaran%2BManickavasagam%2BChennai%2Bcopy.jpg",
+                    "nearbyRailwayStation": "Nagalapuram",
+                    "nearbyAirport": "Tirupati",
+                    "nearbyBusStop": "Nagalapuram",
+                    "nearbyHotel": "Hotel MGM Grand"
+                },
+                {
+                    "placeName": "Araku Valley",
+                    "placeImage": " https://vizagtourism.org.in/images/places-to-visit/header/araku-valley-vizag-tourism-entry-fee-timings-holidays-reviews-header.jpg",
+                    "nearbyRailwayStation": "Araku Junction",
+                    "nearbyAirport": "Visakhapatnam",
+                    "nearbyBusStop": "Visakhapatnam",
+                    "nearbyHotel": "Dolphin Hotel"
+                },
+                {
+                    "placeName": "Papikondalu",
+                    "placeImage": "https://telanganaboattourism.com/assets/images/papikondalu-900x500.jpg",
+                    "nearbyRailwayStation": "Rajahmundry",
+                    "nearbyAirport": "Rajahmundry",
+                    "nearbyBusStop": "Rajahmundry",
+                    "nearbyHotel": "Leela pavilion"
+                },
+                {
+                    "placeName": "Ananthagiri Hills",
+                    "placeImage": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Ananthagiri_Hills.JPG",
+                    "nearbyRailwayStation": "Vikarabad",
+                    "nearbyAirport": "Hyderbad",
+                    "nearbyBusStop": "Vikarabad",
+                    "nearbyHotel": "Trance Veechika Resort"
+                },
+                {
+                    "placeName": "Lambasingi",
+                    "placeImage": "https://static2.tripoto.com/media/filter/tst/img/1728/TripDocument/1498545697_lamos_120916015727.jpg.webp",
+                    "nearbyRailwayStation": "Visakhapatnam",
+                    "nearbyAirport": "Visakhapatnam",
+                    "nearbyBusStop": " Visakhapatnam",
+                    "nearbyHotel": "Dolphin Hotel"
+                },
+                {
+                    "placeName": "Horsley Hills",
+                    "placeImage": "https://www.savaari.com/blog/wp-content/uploads/2022/04/48558708151_ac21de557f_c.jpg",
+                    "nearbyRailwayStation": "Madanapalle",
+                    "nearbyAirport": "Tirupati",
+                    "nearbyBusStop": "Madanapalle",
+                    "nearbyHotel": "Horsley Hills Haritha Hill Resort"
+                },
+                {
+                    "placeName": "Nagari Hills",
+                    "placeImage": "https://i.pinimg.com/originals/6a/fb/80/6afb80df9e06c59c93f11e71c6f3fea4.png",
+                    "nearbyRailwayStation": "chittoor",
+                    "nearbyAirport": "tirupathi",
+                    "nearbyBusStop": "chittoor",
+                    "nearbyHotel": "RAJA MAHAL"
+                }
+            ]
+        },
+        {
+            "categoryName": "Historical Places",
+            "places": [
+                {
+                    "placeName": "Tirumala Venkateswara Temple",
+                    "placeImage": "https://letsjourney.co.in/travels/wp-content/uploads/2016/09/Tirumala.Venkateswara.Temple.original.3311.jpg",
+                    "nearbyRailwayStation": "Tirupati",
+                    "nearbyAirport": "Tirupati",
+                    "nearbyBusStop": "Tirupati",
+                    "nearbyHotel": "GPR Inn"
+                },
+                {
+                    "placeName": "Gandikota",
+                    "placeImage": "https://turuhi.com/storage/story/Title-Gandikota-Canyon.jpg",
+                    "nearbyRailwayStation": "Jammalamadugu",
+                    "nearbyAirport": "Tirupati",
+                    "nearbyBusStop": "Jammalamadugu",
+                    "nearbyHotel": "GPR InnL"
+                },
+                {
+                    "placeName": "Undavalli Caves",
+                    "placeImage": "https://static2.tripoto.com/media/filter/tst/img/1831695/TripDocument/1602946808_94832180_10221953073553621_3592699667332202496_o.jpg.webp",
+                    "nearbyRailwayStation": "Vijayawada",
+                    "nearbyAirport": "Vijayawada",
+                    "nearbyBusStop": "Vijayawada",
+                    "nearbyHotel": "THE CAPITAL HOTEL"
+                },
+                {
+                    "placeName": "Araku Valley",
+                    "placeImage": "https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/05/24173431/Untitled-design-8-4-1.webp",
+                    "nearbyRailwayStation": "Visakhapatnam",
+                    "nearbyAirport": "Visakhapatnam",
+                    "nearbyBusStop": "Visakhapatnam",
+                    "nearbyHotel": "Dolphin Hotel"
+                },
+                {
+                    "placeName": "Amaravati",
+                    "placeImage": " https://static.theprint.in/wp-content/uploads/2022/03/Dhyana_buddha_statue_in_Amaravati.jpg",
+                    "nearbyRailwayStation": "Vijayawada",
+                    "nearbyAirport": "Vijayawada",
+                    "nearbyBusStop": "Amaravati",
+                    "nearbyHotel": "The Captal Hotel"
+                },
+                {
+                    "placeName": "Lepakshi Temple",
+                    "placeImage": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Front_side_of_Veerabhadra_Temple%2C_Lepakshi.jpg",
+                    "nearbyRailwayStation": "Hindupur",
+                    "nearbyAirport": "Bangalore Airport",
+                    "nearbyBusStop": "Hindupur",
+                    "nearbyHotel": "R R GRAND"
+                },
+                {
+                    "placeName": "Rajahmundry",
+                    "placeImage": "https://www.holidify.com/images/bgImages/RAJAHAMUNDRY.jpg",
+                    "nearbyRailwayStation": "Rajahmundry",
+                    "nearbyAirport": "Rajahmundry",
+                    "nearbyBusStop": "Rajahmundry",
+                    "nearbyHotel": "Leela pavilion"
+                },
+                {
+                    "placeName": "Srisailam",
+                    "placeImage": "https://www.savaari.com/blog/wp-content/uploads/2024/01/800px-Srisailam_Entrance_Gopuram-1.jpg",
+                    "nearbyRailwayStation": "Srisailam",
+                    "nearbyAirport": "Hyderabad",
+                    "nearbyBusStop": "Srisailam",
+                    "nearbyHotel": "Hotel R Residency"
+                }
+            ]
+        },
+        {
+            "categoryName": "Beaches",
+            "places": [
+                {
+                    "placeName": "Rishikonda Beach",
+                    "placeImage": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Rushikonda_beach_view_001.jpg",
+                    "nearbyRailwayStation": "Visakhapatnam",
+                    "nearbyAirport": "Visakhapatnam",
+                    "nearbyBusStop": "Visakhapatnam",
+                    "nearbyHotel": "Dolphin Hotel"
+                },
+                {
+                    "placeName": "Manginapudi Beach",
+                    "placeImage": "https://static.toiimg.com/thumb/59284178/ThinkstockPhotos-696947648.jpg?width=1200&height=900",
+                    "nearbyRailwayStation": "Machilipatnam",
+                    "nearbyAirport": "Vijayawada",
+                    "nearbyBusStop": "Machilipatnam",
+                    "nearbyHotel": "THE CAPITAL HOTEL"
+                },
+                {
+                    "placeName": "Mypadu Beach",
+                    "placeImage": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Mypadu_beach-sunrise.jpg",
+                    "nearbyRailwayStation": "Nellore",
+                    "nearbyAirport": "Tirupati",
+                    "nearbyBusStop": "Nellore",
+                    "nearbyHotel": "HOTEL BLUE MOON"
+                },
+                {
+                    "placeName": "Bheemunipatnam Beach",
+                    "placeImage": "https://vizagtourism.org.in/images/places-to-visit/header/bheemunipatnam-beach-vizag-tourism-header.jpg",
+                    "nearbyRailwayStation": "Visakhapatnam",
+                    "nearbyAirport": "Visakhapatnam",
+                    "nearbyBusStop": "Bheemunipatnam",
+                    "nearbyHotel": "Dolphin Hotel"
+                },
+                {
+                    "placeName": "Yarada Beach",
+                    "placeImage": "https://www.holidify.com/images/cmsuploads/compressed/YARADA_BEACH_VIEW_20180305141516.jpg",
+                    "nearbyRailwayStation": "Visakhapatnam",
+                    "nearbyAirport": "Visakhapatnam",
+                    "nearbyBusStop": "Visakhapatnam",
+                    "nearbyHotel": "Dolphin Hotel"
+                },
+                {
+                    "placeName": "Ramakrishna Beach",
+                    "placeImage": " https://www.seawatersports.com/img/newimage/places/r-k-beach.png",
+                    "nearbyRailwayStation": "Visakhapatnam",
+                    "nearbyAirport": "Visakhapatnam",
+                    "nearbyBusStop": "Visakhapatnam",
+                    "nearbyHotel": "Dolphin Hotel"
+                },
+                {
+                    "placeName": "Kothapatnam Beach",
+                    "placeImage": "https://media-cdn.tripadvisor.com/media/photo-s/1a/30/11/16/kothapatnam-beach.jpg",
+                    "nearbyRailwayStation": "Ongole",
+                    "nearbyAirport": "Vijayawada",
+                    "nearbyBusStop": "Ongole",
+                    "nearbyHotel": "HOTEL SOWMYA INN"
+                },
+                {
+                    "placeName": "Vodarevu Beach",
+                    "placeImage": "https://www.trawell.in/admin/images/upload/11461156Vodarevu_Beach_Main.jpg",
+                    "nearbyRailwayStation": "Chirala",
+                    "nearbyAirport": "Vijayawada",
+                    "nearbyBusStop": "Chirala",
+                    "nearbyHotel": "ALA BEACH RESORT"
+                }
+            ]
+        }
+    ]
+}

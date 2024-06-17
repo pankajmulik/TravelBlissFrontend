@@ -5,6 +5,8 @@ import Login from './components/Login'
 import HomePage from './pages/HomePage'
 import Registration from './components/Registration'
 import States from './pages/States'
+import Hotels from './pages/Hotels'
+import StateAndLoader from './pages/States/StateAndLoader'
 
 const Router = () => {
   return (
@@ -15,7 +17,8 @@ const Router = () => {
                   <Route index element={<Login/>}/>
                   <Route path='/login/registration' element={<Registration/>} />
                 </Route>
-                <Route path='/states' element={<States/>} />
+                <Route path='/states' element={<StateAndLoader/>} />
+                <Route path='/hotels' element={<Hotels/>} />
         </Route>
     </Routes>
   )

@@ -1,149 +1,194 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import ToursandTravelsServices from "../../Services/ToursandTravelsServices";
+import React, { useState } from 'react';
+import { Link, redirect } from 'react-router-dom';
+import { useContext } from 'react'
+import { userLoginContext } from '../../context/userLogoncontext'
+import { useNavigate } from 'react-router-dom';
 
-const States = () => {
+// import ToursandTravelsServices from '../../Services/ToursandTravelsServices';
 
+const LoginForm = () => {
+  const [formData, setFormData] = useState({
+    userName: '',
+    password: '',
+    mobileNumber: '',
+    otp: ''
+  });
+  const [errors, setErrors] = useState({});
+  const [popup, setPopup] = useState({ isVisible: false, message: '', isSuccess: false });
+  const [loginMethod, setLoginMethod] = useState('username');
+  const [showOTPField, setShowOTPField] = useState(false);
 
+  const validate = {
+    userName: (value) => value ? '' : 'Username is required.',
+    password: (value) => value ? '' : 'Password is required.',
+    mobileNumber: (value) => value ? '' : 'Mobile number is required.',
+    otp: (value) => value ? '' : 'OTP is required.'
+  };
 
-    const getData=async()=>
-      {
-        const res=await ToursandTravelsServices.getDataByState("Karnataka");
-        console.log(res.data)
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+    setErrors((prevErrors) => ({
+      ...prevErrors,
+      [name]: validate[name](value)
+    }));
+  };
+
+  const checkLogin = async () => {
+    try {
+      // const res = await ToursandTravelsServices.loginuser(formData);
+      // if (res.status === 202) {
+        if (202 === 202) {
+        setPopup({ isVisible: true, message: 'Login successful!', isSuccess: true });
+      } else {
+        setPopup({ isVisible: true, message: 'Invalid credentials.', isSuccess: false });
       }
+    } catch (error) {
+      setPopup({ isVisible: true, message: 'An error occurred. Please try again.', isSuccess: false });
+    }
+  };
+
+  const sendOTP = async () => {
+    setShowOTPField(true);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const fieldsToValidate = loginMethod === 'username' ? ['userName', 'password'] : ['mobileNumber', 'otp'];
+    const newErrors = fieldsToValidate.reduce((acc, key) => {
+      const error = validate[key](formData[key]);
+      if (error) acc[key] = error;
+      return acc;
+    }, {});
+
+    if (Object.keys(newErrors).length === 0) {
+      checkLogin();
+    } else {
+      setErrors(newErrors);
+    }
+    setuserstatus('Logout')
+    // navigate('/home')
     
- 
- 
+  };
 
 
-  const url =
-    "https://cdn.shopify.com/s/files/1/0564/3685/0790/files/multiProduct.json";
-  const [dataObj, setData] = useState([]);
-  const [categories, setCategories] = useState({});
-  const [search , setSearch] = useState('');
-  const [cart, setCart] = useState([]);
-  const [total, setTotal] = useState(0);
-
-  const fetchInfo = async () => {
-    const { data }=await ToursandTravelsServices.getDataByState("Karnataka");
-    console.log(data);
-   // const { data } = await axios.get(url);
-    const categoryNamesNew = {};
-    data.categories.forEach((category) => {
-      categoryNamesNew[category.categoryName] = true;
+  const handleClosePopup = () => {
+    setPopup({ isVisible: false, message: '', isSuccess: false });
+    setFormData({
+      userName: '',
+      password: '',
+      mobileNumber: '',
+      otp: ''
     });
-    setCategories(categoryNamesNew);
-    setData(data.categories);
+    if (!popup.isSuccess) {
+      window.location.reload();
+    }
   };
-  
-  useEffect(() => {
-    fetchInfo();
-  }, []);
-  const removeItem = (id) => {
-    const oldCart = [...cart];
-    oldCart.splice(id, 1);
-    setCart(oldCart);
-  };
-  const addToCart = (id,pimage,product,pprice) => {
-    alert("item added to cart please scroll down");
-    
-    setTotal(total + parseInt(pprice));
-    setCart([...cart,{id,pimage,product,pprice}]);
-};
 
-  const toggleCategories = (categoryName) =>
-    setCategories({ ...categories, [categoryName]: !categories[categoryName] });
+  const {userstatus,setuserstatus}=useContext(userLoginContext)
 
-  const getTotal = () => cart.reduce((accumulator, current) => {
-    return accumulator + parseInt(current.pprice)
-  }, 0)
+ const navigate = useNavigate()
 
   return (
-    <div className="App bg-gray-100">
-      <div onClick={getData}>
-        call me
-      </div>
-      <div className="font-bold text-5xl text-center p-8">Karnataka State</div>
-      
-      <input type="text" className="h-12 focus:outline-none border border-black ml-8 p-2 rounded" placeholder="Search"  onChange={(e) => setSearch(e.target.value)} />
-      
-      {dataObj.map((category , k) => (
-          <button key={k} onClick={() => toggleCategories(category.categoryName)} className={`px-10 py-2 border border-black m-4 ${categories[category.categoryName] ? "bg-black text-white" : ""}`}>
-            {category.categoryName}
-          </button>
-      ))}
-      
-      {/* , search.toLowerCase() === '' ? category : category.category.places.placeName.toLowerCase().includes(search) */}
-      {dataObj.filter(category => categories[category.categoryName]).map((item, i) => {
-        // console.log(item.places.placeName);
-        const products = search ? item.places.filter(product => product.placeName.toLowerCase().includes(search.toLowerCase()) || product.nearbyAirport.toLowerCase().includes(search.toLowerCase())) : item.places;
-        return (
+    <div className='flex flex-col justify-center items-center w-8/12 py-16'>
+      <div className='bg-white py-2 px-8 opacity-80 rounded-lg w-full text-center'>Login to your Account</div>
+      <form className='bg-white opacity-80 w-full rounded-lg px-8 flex flex-col' onSubmit={handleSubmit}>
+        {loginMethod === 'username' ? (
           <>
-            <div
-              className="datacard flex grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16 m-4 "
-              key={i}
-            >
-              {products.map((innerdata, index) => {
-              // { item.places.map((innerdata, index) => {
-                return (
-                  <div
-                    key={index}
-                    className="flex flex-col justify-start mb-4 border bg-white rounded p-2"
-                  >
-                    <div>
-                      <img className="h-[500px] w-full rounded" src={innerdata.placeImage} />
-                    </div>
-                    <div className="flex flex-col items-start p-4">
-                      <div className="text-lg font-semibold">
-                        {" "}
-                        {innerdata.placeName}
-                      </div>
-                      <div className="text-lg">Price: {innerdata.nearbyRailwayStation}</div>
-                      <div className="text-lg"> {innerdata.nearbyAirport}</div>
-                      <div className="text-lg"> {innerdata.nearbyBusStop}</div>
-                      <div className="w-full">
-                        <button className="bg-zinc-300 hover:bg-zinc-400 py-2 rounded w-full " onClick={() => addToCart(innerdata.id,innerdata.image,innerdata.placeName,innerdata.nearbyRailwayStation)}>Add to Cart</button>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-              
+            <div className='mt-6 flex flex-col'>
+              <label className='text-neutral-500 text-sm' htmlFor="userName">Username</label>
+              <input
+                className='border-b pt-[1px] pb-[12px] border-neutral-300 outline-none'
+                type="text"
+                name="userName"
+                id="userName"
+                value={formData.userName}
+                onChange={handleChange}
+                required
+              />
+              {errors.userName && <p className="text-red-500 text-sm">{errors.userName}</p>}
             </div>
-            
+            <div className='mt-6 flex flex-col'>
+              <label className='text-neutral-500 text-sm' htmlFor="password">Password</label>
+              <input
+                className='border-b pt-[1px] pb-[12px] border-neutral-300 outline-none'
+                type="password"
+                name="password"
+                id="password"
+                value={formData.password}
+                onChange={handleChange}
+                required
+              />
+              {errors.password && <p className="text-red-500 text-sm">{errors.password}</p>}
+            </div>
           </>
-        );
+        ) : (
+          <>
+            <div className='mt-6 flex flex-col'>
+              <label className='text-neutral-500 text-sm' htmlFor="mobileNumber">Enter Mobile Number</label>
+              <input
+                className='border-b pt-[1px] pb-[12px] border-neutral-300 outline-none'
+                type="text"
+                name="mobileNumber"
+                id="mobileNumber"
+                value={formData.mobileNumber}
+                onChange={handleChange}
+                required
+              />
+              {errors.mobileNumber && <p className="text-red-500 text-sm">{errors.mobileNumber}</p>}
+            </div>
+            {showOTPField && (
+              <div className='mt-6 flex flex-col'>
+                <label className='text-neutral-500 text-sm' htmlFor="otp">Enter OTP</label>
+                <input
+                  className='border-b pt-[1px] pb-[12px] border-neutral-300 outline-none'
+                  type="text"
+                  name="otp"
+                  id="otp"
+                  value={formData.otp}
+                  onChange={handleChange}
+                  required
+                />
+                {errors.otp && <p className="text-red-500 text-sm">{errors.otp}</p>}
+              </div>
+            )}
+            <div className='flex items-center justify-end'>
+              {!showOTPField && (
+                <button type="button" className='bg-teal-500 text-white py-2 rounded-xl mt-4 px-4 hover:bg-teal-700' onClick={sendOTP}>
+                  Send OTP
+                </button>
+              )}
+            </div>
+          </>
+        )}
+        <div className='flex justify-end text-neutral-500 flex-col items-center'>
+          <div className='my-6'>or</div>
+          <button
+            type="button"
+            className='hover:text-black'
+            onClick={() => setLoginMethod(loginMethod === 'username' ? 'mobile' : 'username')}
+          >
+            {loginMethod === 'username' ? 'Login with Mobile Number' : 'Login with Username and Password'}
+          </button>
+        </div>
+        <button className='bg-teal-500 text-white py-2 rounded-xl my-4' type="submit">Login</button>
         
-      })}
-      <div className="bg-white">
-               <div className="text-5xl p-8">Cart</div>
-               <div className="flex justify-evenly">
-                      <div>Product Image</div>
-                      <div>Product Name</div>
-                      <div>Product Price</div>
-                      <div></div>
-                    </div>
-            <div>
-                {cart.map((item, i) => (
-                  <>
-
-                    <div className="flex justify-evenly items-center m-4">
-                      <div className="h-16 w-16"><img className="h-16 w-10" src={item.pimage} alt="" /></div>
-
-
-                      <div className="w-36" key={item.id}>{item.product}</div>
-                      <div>{item.pprice}</div>
-                      <div><button className="bg-zinc-300 px-6 py-1 rounded hover:bg-zinc-400" onClick={() => removeItem(i)}>REMOVE</button></div>
-                    </div>
-                    </>
-                    ))
-                  }
-                  {cart.length && <div className="text-right">{getTotal()} {total}</div>}
-            </div>
-            </div>
-     
+        <div className='h-12 opacity-5 transparent'>
+        </div>
+      </form>
+      {popup.isVisible && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white p-8 rounded-lg text-center">
+            <h2 className="text-xl mb-4">{popup.message}</h2>
+            <button className="bg-teal-500 text-white py-2 px-4 rounded" onClick={handleClosePopup}>OK</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
 
-export default States;
+export default LoginForm;

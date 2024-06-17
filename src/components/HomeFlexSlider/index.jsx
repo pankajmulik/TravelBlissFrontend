@@ -36,8 +36,8 @@ const HomeFlexSlider = () => {
         slidesToScroll: 1,
         waitForAnimate: false,
         initialSlide: 0,
-    //     autoplay: true,
-    // autoplaySpeed: 2000,
+        autoplay: true,
+    autoplaySpeed: 2000,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         appendDots: dots => (
@@ -119,7 +119,7 @@ const HomeFlexSlider = () => {
                         <img className='  w-full h-full bg-cover bg-center  rounded-lg' src="/images/s11.jpg" alt="Login Background" />
                         <Rajasthan/>
                     </div>
-                    <div className=' h-[calc(100vh-200px)] w-full flex items-center justify-center'>
+                    {/* <div className=' h-[calc(100vh-200px)] w-full flex items-center justify-center'>
                         <img className='  w-full h-full bg-cover bg-center object-cover rounded-lg' src="/images/s12(1).jpg" alt="Login Background" />
                     </div>
                     <div className=' h-[calc(100vh-200px)] w-full flex items-center justify-center'>
@@ -133,7 +133,7 @@ const HomeFlexSlider = () => {
                     </div>
                     <div className=' h-[calc(100vh-200px)] w-full flex items-center justify-center'>
                         <img className='  w-full h-full  object-cover rounded-lg' src="/images/s5.jpeg" alt="Login Background" />
-                    </div>
+                    </div> */}
                    
                 </Slider>
             </div>

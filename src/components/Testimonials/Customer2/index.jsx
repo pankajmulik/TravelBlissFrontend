@@ -19,8 +19,8 @@ const Customer2 = () => {
               count={5}
               size={24}
               activeColor="#ffd700"
-              value={5} // Example rating value
-              edit={false} // Make it non-editable
+              value={5} 
+              edit={false}
             />
           </div>
         </div>
