@@ -81,7 +81,7 @@
 // };
 
 // export default Navbar;
-
+import { RiLuggageCartFill, RiMapPinUserFill } from "react-icons/ri";
 import React, { useState } from "react";
 import { Menu, X } from "react-feather";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
@@ -119,17 +119,33 @@ const Navbar = () => {
               </div>
             </NavLink>
             <div>
-              <div className="text-neutral-600 flex justify-between items-center text-2xl block text-center sm:flex md:hidden lg:hidden ">
+              <div className="text-neutral-600  justify-between items-center text-2xl block text-center sm:flex md:hidden lg:hidden ">
                 <div className="mr-4">
                   <button onClick={ToggleSidebar}>
                     <Menu />
                   </button>
                 </div>
               </div>
-              <div className="text-md text-neutral-500 flex items-center hidden sm:hidden md:flex lg:flex">
+              <div className="text-md text-neutral-500 flex items-center sm:hidden md:flex lg:flex">
                 <NavLink to="" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8" >Home</NavLink>
                 <NavLink to="states" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">State</NavLink>
                 <NavLink to="hotels" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">Hotels</NavLink>
+            
+                {
+                  userstatus === 'Logout' ? <div className="text-neutral-600 flex">
+                    <div className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">
+                      <NavLink to='/mybookings'> <RiLuggageCartFill /> </NavLink>
+                    </div>
+
+                    <div className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">
+                      <NavLink to='/profile'>
+                        <RiMapPinUserFill />
+                      </NavLink>
+                    </div>
+
+                  </div>:null
+                }
+                
               </div>
               <div className={`sidebar bg-white ${isOpen ? "active" : ""}`}>
                 <div className="sd-header">
@@ -180,11 +196,16 @@ const Navbar = () => {
             }
             {
               userstatus === 'Logout' ? <div>
-               <NavLink to="login" className="px-4 mr-4 py-2 bg-teal-500 hover:bg-teal-700 text-white rounded-full" onClick={handleLogout}>
-                  {
-                    userstatus
-                  }
-                </NavLink>
+                
+                <div>
+                  <NavLink to="login" className="px-4 mr-4 py-2 bg-teal-500 hover:bg-teal-700 text-white rounded-full" onClick={handleLogout}>
+                    {
+                      userstatus
+                    }
+                  </NavLink>
+                </div>
+                
+                
               </div> : null
             }
            

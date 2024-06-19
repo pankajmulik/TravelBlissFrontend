@@ -18,7 +18,11 @@ const Router = () => {
                   <Route path='/login/registration' element={<Registration/>} />
                 </Route>
                 <Route path='/states' element={<StateAndLoader/>} />
-                <Route path='/hotels' element={<Hotels/>} />
+        <Route path='/hotels' element={<Hotels />} />
+        
+        <Route path='/mybookings' element={<Hotels />} />
+
+
         </Route>
     </Routes>
   )
