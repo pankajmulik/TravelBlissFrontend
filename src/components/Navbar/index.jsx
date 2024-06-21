@@ -131,8 +131,11 @@ const Navbar = () => {
                 <NavLink to="states" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">State</NavLink>
                 <NavLink to="hotels" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">Hotels</NavLink>
 
+<<<<<<< HEAD
         
 
+=======
+>>>>>>> 118e3e09cd17dc5605004ab6274dce515fec5699
               </div>
               <div className={`sidebar bg-white ${isOpen ? "active" : ""}`}>
                 <div className="sd-header">
