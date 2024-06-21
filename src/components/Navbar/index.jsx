@@ -130,22 +130,7 @@ const Navbar = () => {
                 <NavLink to="" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8" >Home</NavLink>
                 <NavLink to="states" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">State</NavLink>
                 <NavLink to="hotels" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">Hotels</NavLink>
-            
-                {
-                  userstatus === 'Logout' ? <div className="text-neutral-600 flex">
-                    <div className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">
-                      <NavLink to='mybookings'> <RiLuggageCartFill /> </NavLink>
-                    </div>
 
-                    <div className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">
-                      <NavLink to='/profile'>
-                        <RiMapPinUserFill />
-                      </NavLink>
-                    </div>
-
-                  </div>:null
-                }
-                
               </div>
               <div className={`sidebar bg-white ${isOpen ? "active" : ""}`}>
                 <div className="sd-header">
@@ -164,23 +149,38 @@ const Navbar = () => {
                     <NavLink to="" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">Home</NavLink>
                     <NavLink to="states" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">State</NavLink>
                     <NavLink to="hotels" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">Hotels</NavLink>
-                     {userstatus === 'Login' ? (
-              <div className="hidden sm:hidden md:block lg-block">
-                <NavLink to="login" className="px-8 mr-4 py-2 bg-teal-500 hover:bg-teal-700 text-white rounded-full">{
-                  userstatus
-                }</NavLink>
-              </div>
-            ) : null
-            }
-            {
-              userstatus === 'Logout' ? <div>
-               <NavLink to="login" className="px-8 mr-4 py-2 bg-teal-500 hover:bg-teal-700 text-white rounded-full" onClick={handleLogout}>
-                  {
-                    userstatus
-                  }
-                </NavLink>
-              </div> : null
-            }
+                    {userstatus === 'Login' ? (
+                      <div className="hidden sm:hidden md:block lg-block">
+                        <NavLink to="login" className="px-8 mr-4 py-2 bg-teal-500 hover:bg-teal-700 text-white rounded-full">{
+                          userstatus
+                        }</NavLink>
+                      </div>
+                    ) : null
+                    }
+                    {
+                      userstatus === 'Logout' ? <div className="grid md:grid-cols-3">
+
+                        <div className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">
+                          <NavLink to='/mybookings'> <RiLuggageCartFill /> </NavLink>
+                        </div>
+
+                        <div className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">
+                          <NavLink to='/profile'>
+                            <RiMapPinUserFill />
+                          </NavLink>
+                        </div>
+
+                        <div>
+
+
+                          <NavLink to="login" className="px-8 mr-4 py-2 bg-teal-500 hover:bg-teal-700 text-white rounded-full" onClick={handleLogout}>
+                            {
+                              userstatus
+                            }
+                          </NavLink>
+                        </div>
+                      </div> : null
+                    }
                   </div>
                 </div>
               </div>
@@ -195,8 +195,18 @@ const Navbar = () => {
             ) : null
             }
             {
-              userstatus === 'Logout' ? <div>
-                
+              userstatus === 'Logout' ? <div className="flex ">
+
+                <div className="py-1 md:mx-3 text-slate-950 text-xl lg:mx-6 hover:underline hover:underline-offset-8">
+                  <NavLink to='/mybookings'> <RiLuggageCartFill /> </NavLink>
+                </div>
+
+                <div className="py-1 md:mx-3 text-xl text-slate-950 lg:mx-6 hover:underline hover:underline-offset-8">
+                  <NavLink to='/profile'>
+                    <RiMapPinUserFill />
+                  </NavLink>
+                </div>
+
                 <div>
                   <NavLink to="login" className="px-4 mr-4 py-2 bg-teal-500 hover:bg-teal-700 text-white rounded-full" onClick={handleLogout}>
                     {
@@ -204,11 +214,11 @@ const Navbar = () => {
                     }
                   </NavLink>
                 </div>
-                
-                
+
+
               </div> : null
             }
-           
+
           </nav>
         </div>
       </div>
