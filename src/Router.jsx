@@ -7,6 +7,8 @@ import Registration from './components/Registration'
 import States from './pages/States'
 import Hotels from './pages/Hotels'
 import StateAndLoader from './pages/States/StateAndLoader'
+import MyBookings from './pages/mybookings/MyBookings'
+import AdminDashboard from './pages/AdminDashboard'
 
 const Router = () => {
   return (
@@ -20,7 +22,8 @@ const Router = () => {
                 <Route path='/states' element={<StateAndLoader/>} />
         <Route path='/hotels' element={<Hotels />} />
         
-        <Route path='/mybookings' element={<Hotels />} />
+        <Route path='/mybookings' element={<MyBookings/>} />
+        <Route path='/admindashboard' element={<AdminDashboard/>} />
 
 
         </Route>

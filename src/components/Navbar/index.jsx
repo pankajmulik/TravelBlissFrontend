@@ -134,7 +134,7 @@ const Navbar = () => {
                 {
                   userstatus === 'Logout' ? <div className="text-neutral-600 flex">
                     <div className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">
-                      <NavLink to='/mybookings'> <RiLuggageCartFill /> </NavLink>
+                      <NavLink to='mybookings'> <RiLuggageCartFill /> </NavLink>
                     </div>
 
                     <div className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">
