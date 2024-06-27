@@ -85,6 +85,11 @@ import { RiLuggageCartFill, RiMapPinUserFill } from "react-icons/ri";
 import React, { useState } from "react";
 import { Menu, X } from "react-feather";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
+
+
+// use this imports to see user loged in or not and by using this 
+// u can show data according 
+// to login status in every component just import these two imports in respective components
 import { userLoginContext } from '../../context/userLogoncontext'
 import { useContext } from "react";
 
@@ -98,9 +103,12 @@ const Navbar = () => {
 
   const isLoginPage = location.pathname === "/login";
 
+  //  userstatus stores value as Login and Logout 
+
   const { userstatus, setuserstatus } = useContext(userLoginContext)
   const handleLogout = () => {
     setuserstatus('Login')
+    
   }
 
 
@@ -131,11 +139,11 @@ const Navbar = () => {
                 <NavLink to="states" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">State</NavLink>
                 <NavLink to="hotels" className="py-1 md:mx-3 lg:mx-6 hover:underline hover:underline-offset-8">Hotels</NavLink>
 
-<<<<<<< HEAD
+                {/* <<<<<<< HEAD
         
 
 =======
->>>>>>> 118e3e09cd17dc5605004ab6274dce515fec5699
+>>>>>>> 118e3e09cd17dc5605004ab6274dce515fec5699 */}
               </div>
               <div className={`sidebar bg-white ${isOpen ? "active" : ""}`}>
                 <div className="sd-header">

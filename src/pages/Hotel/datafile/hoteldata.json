@@ -1,0 +1,377 @@
+{
+    "stateName": "Madhya Pradesh",
+    "cities": [
+        {
+            "cityName": "Bhopal",
+            "rating": [
+                {
+                    "hotelRating": "5 Star",
+                    "hotels": [
+                        {
+                            "name": "Hotel Jehan Numa Palace",
+                            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/4e/33/7f/jehan-numa-palace-hotel.jpg?w=700&h=-1&s=1",
+                            "address": "157, Shamla Hill, Bhopal, Madhya Pradesh 462013",
+                            "pricing": {
+                                "Deluxe Room": "5000 Rs per night",
+                                "Suite": "8000 Rs per night"
+                            }
+                        },
+                        {
+                            "name": "Courtyard by Marriott Bhopal",
+                            "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/542140388.jpg?k=3e46932683df15d71c94e19ec498613f2e1ff44d80d625898f1734768f899172&o=&hp=1",
+                            "address": "DB City, Arera Hills, Bhopal, Madhya Pradesh 462011",
+                            "pricing": {
+                                "Standard Room": "7000 Rs per night",
+                                "Executive Room": "10000 Rs per night"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "hotelRating": "4 Star",
+                    "hotels": [
+                        {
+                            "name": "Hotel Lake View Ashok",
+                            "image": "https://image.wedmegood.com/resized/800X/uploads/member/540670/1553679609_Capture6.JPG",
+                            "address": "Shamla Hills, Bhopal, Madhya Pradesh 462013",
+                            "pricing": {
+                                "Standard Room": "4000 Rs per night",
+                                "Deluxe Room": "6000 Rs per night"
+                            }
+                        },
+                        {
+                            "name": "Hotel Noor-Us-Sabah Palace",
+                            "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/280078060.jpg?k=e5ada1b5e8021cbf831cd161e028cab5252457fffee4e45ae41674f9747bd8ee&o=&hp=1",
+                            "address": "VIP Road, Koh-e-Fiza, Bhopal, Madhya Pradesh 462001",
+                            "pricing": {
+                                "Heritage Room": "7000 Rs per night",
+                                "Royal Club Room": "10000 Rs per night"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "hotelRating": "3 Star",
+                    "hotels": [
+                        {
+                            "name": "Hotel Shree Vatika",
+                            "image": "https://gos3.ibcdn.com/ebf93494370211e4aeae36cfdd80c293.jfif",
+                            "address": "Zone-I, Maharana Pratap Nagar, Bhopal, Madhya Pradesh 462011",
+                            "pricing": {
+                                "Standard Room": "2000 Rs per night",
+                                "Deluxe Room": "3000 Rs per night"
+                            }
+                        },
+                        {
+                            "name": "Hotel Sonali Regency",
+                            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS93gbaYnIaF2nnTD8Y6wDl0FPFuM_Tx5H_Q&s",
+                            "address": "Kotwali Chouraha, Hamidia Road, Bhopal, Madhya Pradesh 462001",
+                            "pricing": {
+                                "Executive Room": "1500 Rs per night",
+                                "Suite": "2500 Rs per night"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cityName": "Indore",
+            "rating": [
+                {
+                    "hotelRating": "5 Star",
+                    "hotels": [
+                        {
+                            "name": "Radisson Blu Hotel Indore",
+                            "image": "https://imgcld.yatra.com/ytimages/image/upload/t_seo_Hotel_w_930_h_550_c_fill_g_auto_q_40_f_jpg/v1440995237/Domestic%20Hotels/Hotels_Indore/Radisson%20Hotel%20Indore/1_-_Hotel_Facade.jpg",
+                            "address": "12, Scheme No 94C, Ring Road, Indore, Madhya Pradesh 452010",
+                            "pricing": {
+                                "Business Class Room": "6000 Rs per night",
+                                "Presidential Suite": "12000 Rs per night"
+                            }
+                        },
+                        {
+                            "name": "Sayaji Hotel Indore",
+                            "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/106332464.jpg?k=f702ee255be2eaa83d98b09e1f64651697987db4d5aec10d6a50b90d4a57276c&o=&hp=1",
+                            "address": "H-1, Scheme No 54, Vijay Nagar, Indore, Madhya Pradesh 452010",
+                            "pricing": {
+                                "Comfort Room": "4000 Rs per night",
+                                "Grand Suite": "9000 Rs per night"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "hotelRating": "4 Star",
+                    "hotels": [
+                        {
+                            "name": "Fortune Landmark Indore",
+                            "image": "https://fortune-landmark-indore-hotel.hotelmix.co.uk/data/Photos/OriginalPhoto/1255/125572/125572875/Landmark-Indore-Exterior.JPEG",
+                            "address": "Adjoining Meghdoot Gardens, Vijay Nagar, Indore, Madhya Pradesh 452010",
+                            "pricing": {
+                                "Standard Room": "4500 Rs per night",
+                                "Club Room": "7500 Rs per night"
+                            }
+                        },
+                        {
+                            "name": "Fairfield by Marriott Indore",
+                            "image": "https://r1imghtlak.ibcdn.com/a3e35296277411e8aebf0a9df65c8753.jpg?downsize=634:357",
+                            "address": "Plot No 18C, Scheme 94 Sector BC, Ring Road, Indore, Madhya Pradesh 452010",
+                            "pricing": {
+                                "Standard Room": "5000 Rs per night",
+                                "Executive Room": "8000 Rs per night"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "hotelRating": "3 Star",
+                    "hotels": [
+                        {
+                            "name": "Hotel Apna Palace",
+                            "image": "https://th.bing.com/th/id/OIP.ZwAQpSoBwWHna_R1bF5tzQHaE8?pid=ImgDetMain",
+                            "address": "A.B. Road, Indore, Madhya Pradesh 452010",
+                            "pricing": {
+                                "Standard Room": "2500 Rs per night",
+                                "Deluxe Room": "3500 Rs per night"
+                            }
+                        },
+                        {
+                            "name": "Hotel Kalinga",
+                            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/4e/7c/83/oyo-1414-hotel-kalinga.jpg?w=900&h=-1&s=1",
+                            "address": "19/1, South Tukoganj, Nath Mandir Road, Indore, Madhya Pradesh 452001",
+                            "pricing": {
+                                "Standard Room": "2200 Rs per night",
+                                "Suite": "4000 Rs per night"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cityName": "Gwalior",
+            "rating": [
+                {
+                    "hotelRating": "5 Star",
+                    "hotels": [
+                        {
+                            "name": "Taj Usha Kiran Palace",
+                            "image": "https://www.greavesindia.co.uk/wp-content/uploads/2016/11/Greaves_Taj_Usha_Kiran_Palace.jpg",
+                            "address": "Jayendraganj, Lashkar, Gwalior, Madhya Pradesh 474009",
+                            "pricing": {
+                                "Luxury Room": "10000 Rs per night",
+                                "Royal Suite": "20000 Rs per night"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "hotelRating": "4 Star",
+                    "hotels": [
+                        {
+                            "name": "Clarks Inn Suites Gwalior",
+                            "image": "https://r1imghtlak.mmtcdn.com/4f48f420727011e78394025f77df004f.jpg",
+                            "address": "Beside Indian Oil Petrol Pump, City Center, Gwalior, Madhya Pradesh 474011",
+                            "pricing": {
+                                "Superior Room": "3000 Rs per night",
+                                "Executive Suite": "6000 Rs per night"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "hotelRating": "3 Star",
+                    "hotels": [
+                        {
+                            "name": "Hotel Grace",
+                            "image": "https://th.bing.com/th/id/OIP.mnKw_RQVyua6BxHWChrrOQHaMC?pid=ImgDetMain",
+                            "address": "Opposite Indian Coffee House, Phoolbagh, Gwalior, Madhya Pradesh 474001",
+                            "pricing": {
+                                "Standard Room": "1500 Rs per night",
+                                "Deluxe Room": "2500 Rs per night"
+                            }
+                        },
+                        {
+                            "name": "Hotel Shelter",
+                            "image": "https://th.bing.com/th/id/OIP.IGiGXyzZ1B-yNpF1qMaOIQHaFj?pid=ImgDetMain",
+                            "address": "Padav, Near Railway Station, Gwalior, Madhya Pradesh 474002",
+                            "pricing": {
+                                "Standard Room": "1800 Rs per night",
+                                "Suite": "3000 Rs per night"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cityName": "Jabalpur",
+            "rating": [ 
+                {
+                    "hotelRating": "5 Star",
+                    "hotels": [
+                        {
+                            "name": "Hotel Kalchuri Residency",
+                            "image": "https://th.bing.com/th/id/OIP.2aWraqclRyKAOgcCCW9kEwHaE7?pid=ImgDetMain",
+                            "address": "Civil Lines, Jabalpur, Madhya Pradesh 482001",
+                            "pricing": {
+                                "Superior Room": "6000 Rs per night",
+                                "Presidential Suite": "12000 Rs per night"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "hotelRating": "4 Star",
+                    "hotels": [
+                        {
+                            "name": "Narmada Jacksons Hotel",
+                            "image": "https://media-cdn.tripadvisor.com/media/photo-s/08/39/b8/69/exterior.jpg",
+                            "address": "South Civil Lines, Jabalpur, Madhya Pradesh 482001",
+                            "pricing": {
+                                "Standard Room": "4000 Rs per night",
+                                "Club Suite": "7000 Rs per night"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "hotelRating": "3 Star",
+                    "hotels": [
+                        {
+                            "name": "Hotel Satya Ashoka",
+                            "image": "https://th.bing.com/th/id/OIP.VpnvKQWeWzXfyT2Z2Q2TagHaD3?pid=ImgDetMain",
+                            "address": "Wright Town, Jabalpur, Madhya Pradesh 482002",
+                            "pricing": {
+                                "Standard Room": "2000 Rs per night",
+                                "Deluxe Room": "3000 Rs per night"
+                            }
+                        },
+                        {
+                            "name": "Hotel Rishi Regency",
+                            "image": "https://th.bing.com/th/id/OIP.1OaZXfxMyvE9wQIG_-z2SgHaE7?pid=ImgDetMain",
+                            "address": "Civic Centre, Jabalpur, Madhya Pradesh 482002",
+                            "pricing": {
+                                "Standard Room": "2500 Rs per night",
+                                "Suite": "4000 Rs per night"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cityName": "Ujjain",
+            "rating": [
+                {
+                    "hotelRating": "5 Star",
+                    "hotels": [
+                        {
+                            "name": "Anjushree Inn",
+                            "image": "https://r1imghtlak.mmtcdn.com/00df037caf9211ee9d450a58a9feac02.jpg?&output-quality=75&downsize=520:350&crop=520:350;51,0&output-format=jpg",
+                            "address": "Dewas Road, Nanakheda, Ujjain, Madhya Pradesh 456010",
+                            "pricing": {
+                                "Superior Room": "5000 Rs per night",
+                                "Executive Suite": "9000 Rs per night"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "hotelRating": "4 Star",
+                    "hotels": [
+                        {
+                            "name": "Hotel Imperial",
+                            "image": "https://content.r9cdn.net/rimg/himg/e7/df/fd/leonardo-20270-144078093-608136.jpg?width=1200&height=630&crop=true",
+                            "address": "Vikram Marg, Ujjain, Madhya Pradesh 456010",
+                            "pricing": {
+                                "Deluxe Room": "4000 Rs per night",
+                                "Suite": "7000 Rs per night"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "hotelRating": "3 Star",
+                    "hotels": [
+                        {
+                            "name": "Hotel Midland",
+                            "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/183111728.jpg?k=d70a172dcc5b012f1515b68fd5433a2138d3781ef4692b1f4055af6b9ac83248&o=&hp=1",
+                            "address": "Near Nanakheda Bus Stand, Ujjain, Madhya Pradesh 456010",
+                            "pricing": {
+                                "Standard Room": "2000 Rs per night",
+                                "Deluxe Room": "3000 Rs per night"
+                            }
+                        },
+                        {
+                            "name": "Hotel Ashray",
+                            "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/187091499.jpg?k=18fa30d64e59e0b99a909487f99fe0b468c8106cfe17448e6fbfb8fbff17754d&o=&hp=1",
+                            "address": "Dewas Gate, Ujjain, Madhya Pradesh 456001",
+                            "pricing": {
+                                "Executive Room": "2500 Rs per night",
+                                "Suite": "4000 Rs per night"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cityName": "Khajuraho",
+            "rating": [
+                {
+                    "hotelRating": "5 Star",
+                    "hotels": [
+                        {
+                            "name": "The Lalit Temple View Khajuraho",
+                            "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/7337881.jpg?k=8e9ab4ca7d5cf506f5dc4894d85ebe810837512ef2facb344979be7afa77cf64&o=&hp=1",
+                            "address": "Opposite Circuit House, Khajuraho, Madhya Pradesh 471606",
+                            "pricing": {
+                                "Luxury Room": "12000 Rs per night",
+                                "Temple Suite": "20000 Rs per night"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "hotelRating": "4 Star",
+                    "hotels": [
+                        {
+                            "name": "Ramada Khajuraho",
+                            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/cf/68/d8/ramada-khajuraho-pool.jpg?w=700&h=-1&s=1",
+                            "address": "Airport Road, Khajuraho, Madhya Pradesh 471606",
+                            "pricing": {
+                                "Deluxe Room": "5000 Rs per night",
+                                "Executive Suite": "8000 Rs per night"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "hotelRating": "3 Star",
+                    "hotels": [
+                        {
+                            "name": "Hotel Isabel Palace",
+                            "image": "https://cf.bstatic.com/xdata/images/hotel/max500/320645386.jpg?k=324519cb82ffbda4bfca057db15b6a62f6ca5eb2c4e494fd1b20206b84ae81b5&o=&hp=1",
+                            "address": "Main Temple Road, Khajuraho, Madhya Pradesh 471606",
+                            "pricing": {
+                                "Standard Room": "2000 Rs per night",
+                                "Deluxe Room": "3000 Rs per night"
+                            }
+                        },
+                        {
+                            "name": "Hotel Harmony",
+                            "image": "https://media-cdn.tripadvisor.com/media/photo-s/1d/33/61/51/hotel-harmony-inn.jpg",
+                            "address": "Jain Temple Road, Khajuraho, Madhya Pradesh 471606",
+                            "pricing": {
+                                "Standard Room": "1800 Rs per night",
+                                "Suite": "3000 Rs per night"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
