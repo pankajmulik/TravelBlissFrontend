@@ -71,7 +71,7 @@ const ContactUs = () => {
               backgroundColor: isFormVisible ? 'rgba(255, 255, 255, 0.2)' : 'transparent' 
             }}>
             <div className='text-4xl '>Contact Us</div>
-            <div className='my-4 text-lg text-natural-500 mt-5 text-center'>Here are few ways to get in touch with us</div>
+            <div className='my-4 text-lg text-natural-500 mt-5 text-center'>Here are few wa ys to get in touch with us</div>
             <button
               className='bg-teal-300 border border-black px-8 py-2 mt-4 hover:transition-all duration-500 hover:bg-teal-500 shadow-md hover:shadow-lg'
               onClick={toggleFormVisibility}

@@ -9,6 +9,8 @@ import Hotels from './pages/Hotels'
 import StateAndLoader from './pages/States/StateAndLoader'
 import MyBookings from './pages/mybookings/MyBookings'
 import AdminDashboard from './pages/AdminDashboard'
+import Users from './pages/AdminDashboard/Users'
+import AdminSidebar from './pages/AdminDashboard/AdminSidebar'
 
 const Router = () => {
   return (
@@ -23,7 +25,12 @@ const Router = () => {
         <Route path='/hotels' element={<Hotels />} />
         
         <Route path='/mybookings' element={<MyBookings/>} />
-        <Route path='/admindashboard' element={<AdminDashboard/>} />
+        {/* <Route path='/admindashboard' element={<AdminDashboard/>} /> */}
+        <Route path='/admindashboard' element={<AdminSidebar/>}>
+            <Route index element={<AdminDashboard/>} />
+            <Route path='/admindashboard/users' element={<Users/>} />
+
+        </Route>
 
 
         </Route>

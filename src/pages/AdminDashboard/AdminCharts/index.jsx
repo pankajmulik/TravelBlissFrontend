@@ -107,7 +107,7 @@ const AdminCharts = () => {
   ];
 
   return (
-    <div className="container mx-auto p-6 w-8/12">
+    <div className="ml-8 w-6/12">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
         <div className="bg-white p-4 shadow rounded-lg flex items-center">
           <FaMapMarkerAlt className="text-4xl text-teal-500" />

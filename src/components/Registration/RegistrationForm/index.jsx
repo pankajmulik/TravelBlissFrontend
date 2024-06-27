@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import OTPVerification from '../OTPVerification';
-// import ToursandTravelsServices from '../../../Services/ToursandTravelsServices';
+import ToursandTravelsServices from '../../../Services/ToursandTravelsServices';
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
@@ -22,7 +22,7 @@ const RegistrationForm = () => {
   const [otpMessage, setOtpMessage] = useState('');
 
   const validate = {
-    userName: (value) => /^[a-zA-Z0-9_.-@]{3,16}$/.test(value) ? '' : 'Username must be 3-16 characters and can only contain letters, numbers, and underscores.',
+    userName: (value) => /^[a-zA-Z0-9_.-@]{4,16}$/.test(value) ? '' : 'Username must be 3-16 characters and can only contain letters, numbers, and underscores.',
     email: (value) => /^(?!.?\.\.)(?!.?\.(|\.|\.))([a-zA-Z0-9]+[a-zA-Z]*)(?:[.][a-zA-Z0-9]+)?(?:[.]?[a-zA-Z0-9]+)?@[a-zA-Z.]+(?:[a-zA-Z0-9]+)?\.[a-zA-Z]{2,3}$/.test(value) ? '' : 'Email must be in lowercase, include "@" and a valid domain extension.',
     mobileNumber: (value) => /^[6-9]\d{9}$/.test(value) ? '' : 'Contact number must be 10 digits and start with a digit from 6 to 9.',
     password: (value) => /^(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=!]).{8,}$/.test(value) ? '' : 'Password must be at least 8 characters long, contain uppercase and lowercase letters, and include special characters.',

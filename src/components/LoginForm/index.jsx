@@ -4,7 +4,7 @@ import { useContext } from 'react'
 import { userLoginContext } from '../../context/userLogoncontext'
 import { useNavigate } from 'react-router-dom';
 
-// import ToursandTravelsServices from '../../Services/ToursandTravelsServices';
+import ToursandTravelsServices from '../../Services/ToursandTravelsServices';
 
 const LoginForm = () => {
   const [formData, setFormData] = useState({
@@ -42,9 +42,8 @@ const LoginForm = () => {
 
   const checkLogin = async () => {
     try {
-      // const res = await ToursandTravelsServices.loginuser(formData);
-      // if (res.status === 202) {
-        if (202 === 202) {
+      const res = await ToursandTravelsServices.loginuser(formData);
+      if (res.status === 202) {
         setPopup({ isVisible: true, message: 'Login successful!', isSuccess: true });
       } else {
         setPopup({ isVisible: true, message: 'Invalid credentials.', isSuccess: false });
