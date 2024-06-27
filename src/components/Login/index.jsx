@@ -11,7 +11,7 @@ const Login = () => {
                     <div className='grid-items flex justify-center items-center'>
                         <LoginLeftFlex/>
                     </div>
-                    <div className='grid-item bg-cover bg-center bg-[url("../public/images/LoginBackground.avif")] rounded-xl flex justify-center items-center '>
+                    <div className='grid-item bg-cover bg-center bg-[url("/images/LoginBackground.avif")] rounded-xl flex justify-center items-center '>
                         <LoginForm/>
                     </div>
 

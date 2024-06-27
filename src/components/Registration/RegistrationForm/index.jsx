@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
 import OTPVerification from '../OTPVerification';
-import ToursandTravelsServices from '../../../Services/ToursandTravelsServices';
+// import ToursandTravelsServices from '../../../Services/ToursandTravelsServices';
 
+// import ToursandTravelsServices from '../../../Services/ToursandTravelsServices';
+import { useNavigate } from 'react-router-dom';
+import { useContext } from 'react'
+import { userLoginContext } from '../../../context/userLogoncontext'
 const RegistrationForm = () => {
+
+  const { userstatus, setuserstatus } = useContext(userLoginContext)
+
+  const navigate=useNavigate()
   const [formData, setFormData] = useState({
     fullName: '',
     userName: '',
@@ -70,6 +78,8 @@ const RegistrationForm = () => {
       console.log('Form submitted successfully');
       creatUser();
       setIsPopupVisible(true);
+      setuserstatus('Logout')
+      navigate('/')
     } else {
       setErrors(newErrors);
     }
